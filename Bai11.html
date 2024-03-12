@@ -6,7 +6,9 @@
 </head>
 <body>
 <script>
-    let price = +prompt("Nhập số điện tiêu thụ trong tháng:");
+
+    //Tính tiền điện
+    /*let price = +prompt("Nhập số điện tiêu thụ trong tháng:");
     if (price > 0 && price <=50){
         alert("tiền điện tháng này là: " + price*1806);
     }else if (price >50 && price<=100){
@@ -21,8 +23,34 @@
     }else {
         alert("tiền điện tháng này là: " + price * 3151);
     }
+*/
 
+    //Tính thuế thu nhập cá nhân
+    let luong = +prompt("Nhập tiền lương của bạn:");
+    if ( luong <= 5000000){
+        alert("Tiền thuế TNCN của bạn là: " + luong*0.05);
+    }else if (luong >5000000 && luong <=10000000){
+        alert("Tiền thuế TNCN của bạn là: " + luong*0.1);
+    }else if (luong >10000000 && luong <=18000000){
+        alert("Tiền thuế TNCN của bạn là: " + luong*0.15);
+    }else if (luong >18000000 && luong <=32000000){
+        alert("Tiền thuế TNCN của bạn là: " + luong*0.2);
+    }else if (luong >32000000 && luong <=52000000){
+        alert("Tiền thuế TNCN của bạn là: " + luong*0.25);
+    }else if (luong >52000000 && luong <=80000000){
+        alert("Tiền thuế TNCN của bạn là: " + luong*0.3);
+    } else {
+        alert("Tiền thuế TNCN của bạn là: " + luong*0.35);
+    }
 
+    //Tính lãi suất ngân hàng
+    let loan = +prompt("Nhập khoản vay:");
+    let duration = +prompt("Nhập thời gian vay ( tháng ):");
+    if ( duration <=12){
+
+        alert("Tiền gốc hàng tháng là: " + loan/duration);
+        alert("Tiền lãi hàng tháng là: " + loan/0.09);
+    }
 
 </script>
 </body>
