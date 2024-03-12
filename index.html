@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   // let age = 12;
+    //let money = 20000;
+    //alert(age >18 && money >=20000); //đi vào bar (&&: và) cần cả 2 điều kiện để ra được true
+    //alert(age >18 || money >=20000); //đi vào bar (||: hoặc) 1 trong 2 dkien được đáp ứng => true
+    //alert(!true); //toán tử phủ định
+
+   /* let a = +prompt("nhập vào số: ");
+    if (a >10) {
+        console.log("a lớn hơn 10");
+    } else {
+        console.log("a nhỏ hơn 10");
+    }
+    console.log("hello c02")*/
+
+  /*  let a  = +prompt("nhập vào điểm: ");
+    if (a >=90){
+        console.log("Tốt");
+    }else if (a >=70 && a<90) {
+        console.log("Khá");
+    }else if ( a >=50 && a<70){
+        console.log("trung bình");
+    }else {
+        console.log("yếu");
+    }*/
+    /*if (a >10){
+        console.log("a lớn hơn 10");
+    } else if (a===10){
+        console.log("a bằng 10");
+    }else {
+        console.log("a nhỏ hơn 10");
+    }
+    console.log(" hello c02");
+*/
+   // if (5>3 && 3>2){
+     //   alert('hello');
+    //}
+   /*let age = 20;
+   let money = 20000;
+   if (age >=18){
+       if(money>=20000){
+           alert("accept");
+       }
+   }*/
+
+   /*let money = 100000;
+   let vitri = "giam doc";
+    if (money >200000 || vitri === "giam doc"){
+        alert("accept")
+    }*/
+
+   let  day = +prompt("Nhập thứ: ");
+   switch (day){
+       case 1:
+           console.log("chủ nhật")
+           break;
+       case 2:
+           console.log("thứ 2");
+           break;
+       default: // nếu nhập vào k trùng với case nào, sử dụng break
+           console.log("k có ngày này");
+           break;
+   }
+
+   let a = +prompt("Nhp a: ");
+   let b = +prompt("Nhập b: ")
+   let c = a>b? a: b;
+   alert(c);
+
+   (a>b) ?alert(a): alert(b);
+</script>
+</body>
+</html>

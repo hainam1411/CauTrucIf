@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let price = +prompt("Nhập số điện tiêu thụ trong tháng:");
+    if (price > 0 && price <=50){
+        alert("tiền điện tháng này là: " + price*1806);
+    }else if (price >50 && price<=100){
+        alert("tiền điện tháng này là: " + price*1866);
+    }else if (price >100 && price<=200) {
+        alert("tiền điện tháng này là: " + price * 2167);
+    }else if (price >200 && price<=300) {
+        alert("tiền điện tháng này là: " + price * 2729);
+    }
+    else if (price >300 && price<=400) {
+        alert("tiền điện tháng này là: " + price * 3050);
+    }else {
+        alert("tiền điện tháng này là: " + price * 3151);
+    }
+
+
+
+</script>
+</body>
+</html>

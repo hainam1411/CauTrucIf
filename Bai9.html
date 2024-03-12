@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DoULoveMe</title>
+</head>
+<style>
+    div{
+        margin: 20% 50%;
+        width: 20%;
+    }
+</style>
+<body>
+<div>
+    <h1>Do you love me</h1>
+    <button onclick="yes()" id="clickYes">yes</button>
+    <button onmouseover="no()" style="position: relative" id="clickNo">no</button>
+</div>
+<script>
+    function yes(){
+    document.getElementById('clickYes').innerHTML = "<3"
+
+    }
+    function no(){
+        document.getElementById("clickNo").style.top = Math.random() *window.innerHeight +"px";
+        document.getElementById("clickNo").style.left = Math.random() *window.innerWidth +"px";
+    }
+</script>
+</body>
+</html>
